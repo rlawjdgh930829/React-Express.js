@@ -15,6 +15,8 @@ function LandingPage() {
     .then(response => {
       if(response.data.success) {
         navigate('/login')
+      } else {
+        alert('로그아웃이 실패했습니다')
       }
     })
   }

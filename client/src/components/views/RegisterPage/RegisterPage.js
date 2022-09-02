@@ -46,6 +46,7 @@ function RegisterPage() {
         if(response.payload.success) {
           navigate('/login')
         } else {
+          console.log(response)
           alert('회원가입에 실패했습니다')
         }
       })
